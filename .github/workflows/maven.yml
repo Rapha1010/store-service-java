@@ -29,19 +29,12 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install
-
-  deploy:
-  
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
    
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
       with:
-       context: .
        image: rapha1010/store-service-java-image
-       tags: latest/v2
+       tags: latest
        registry: docker.io
        dockerfile: Dockerfile
        username: ${{ secrets.DOCKER_USERNAME }}
