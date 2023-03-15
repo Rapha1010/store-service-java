@@ -40,7 +40,7 @@ jobs:
        image: rapha1010/store-service-java-image
        tags: latest
        registry: docker.io
-       dockerfile: ./Dockerfile
+       dockerfile: .store-service-java/Dockerfile
        username: ${{ secrets.DOCKER_USERNAME }}
        password: ${{ secrets.DOCKER_PASSWORD }}
        
