@@ -37,9 +37,8 @@ jobs:
     steps:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Push Docker image
-    - uses: actions/checkout@v3
-      name: Checkout
       with:
+       context: "{{defaultContext}}:store-service-java"
        image: rapha1010/store-service-java-image
        tags: latest
        registry: docker.io
