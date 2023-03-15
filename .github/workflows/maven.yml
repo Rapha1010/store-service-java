@@ -40,7 +40,7 @@ jobs:
       name: Build & push Docker image
       with:
        image: rapha1010/store-service-java-image
-       tags: latest
+       tags: latest/v2
        registry: docker.io
        dockerfile: Dockerfile
        username: ${{ secrets.DOCKER_USERNAME }}
