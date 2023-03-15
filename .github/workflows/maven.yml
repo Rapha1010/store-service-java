@@ -33,7 +33,6 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Push Docker image
       with:
-       context: "/store-service-java/Dockerfile"
        image: rapha1010/store-service-java-image
        tags: latest
        registry: docker.io
