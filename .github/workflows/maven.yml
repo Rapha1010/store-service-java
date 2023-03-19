@@ -49,6 +49,6 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "store-service" #Must be unique in Heroku
-          heroku_email: "rapha.tavares1010@gmail.com"
+          heroku_email: "rapha.tavares1010@gmail.com" 
        
        
